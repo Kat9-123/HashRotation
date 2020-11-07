@@ -1,3 +1,4 @@
+# Made by: Kat9_123
 from hashlib import sha256
 from binascii import b2a_base64
 
