@@ -16,6 +16,7 @@ characterSet += "0123456789"
 characterSet += "/+"
 characterSet *= 8
 
+type = False
 
 
 # Get user input
