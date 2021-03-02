@@ -3,9 +3,8 @@
 # it has some randomly generated "salt" at the beginning of the message
 # to try to circumvent a KPA
 from hashlib import sha256
-from binascii import b2a_base64
 from os import urandom
-import base64
+from base64 import b64encode
 
 
 
@@ -37,7 +36,7 @@ if ch == "D":
 	salt = inputText.split("=")[0] + "="
 	inputText = inputText.split("=")[1]
 else:
-	salt = base64.b64encode(urandom(32)).decode()
+	salt = b64encode(urandom(32)).decode()
 	out = salt
 
 key = salt + key
