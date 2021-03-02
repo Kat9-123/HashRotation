@@ -35,7 +35,7 @@ ch = input(">").upper()
 
 out = ""
 
-# Handle decryption AND "salt" to circumvent a KPA
+# Handle decryption AND "salt" to try to circumvent a KPA
 if ch == "D":
 	type = True
 	salt = inputText.split("=")[0] + "="
