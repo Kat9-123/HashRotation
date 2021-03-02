@@ -38,7 +38,7 @@ if ch == "D":
 	inputText = inputText.split("=")[1]
 else:
 	salt = base64.b64encode(urandom(32)).decode()
-	out = extra
+	out = salt
 
 key = salt + key
 
